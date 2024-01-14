@@ -11,7 +11,7 @@ mongoose.connect(MONGO_URI).then(()=>console.log('connected to db'))
 .catch((e)=>console.log('some error',e))
 
 
-app.use('/api/v1',todoRoute)
+app.use('/api/v1/todo',todoRoute)
 
 app.listen(PORT,()=>{
     console.log('running on '+PORT)
