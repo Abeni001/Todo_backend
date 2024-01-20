@@ -52,13 +52,13 @@ export const store =async(req,res)=>{
 export const update =async(req,res)=>{
     try{
         const {id} = req.params
-        const {text} = req.body
-    if(!text){
-        return res.status(422).json({
-            'message':"text can't be empty"
-        })
-    }
-    const todo = await Todo.findOneAndUpdate({_id:id},{text},{new:true}) // { new: true } returns the updated document
+        const {text,isCompleted} = req.body
+    // if(!text){
+    //     return res.status(422).json({
+    //         'message':"text can't be empty"
+    //     })
+    // }
+    const todo = await Todo.findOneAndUpdate({_id:id},{text,isCompleted},{new:true}) // { new: true } returns the updated document
     if(!todo){
         return res.status(404).json({
             'message':"this todo can't be found"
