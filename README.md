@@ -19,12 +19,12 @@ Make sure you have the following installed on your machine:
    ```
 2.**Install dependecies:**
 
-  ```bash
-  npm install
-  ```
+   ```bash
+   npm install
+   ```
 3.**Configure environment variables:**
-
-Replace Port,Mongo_uri and Secret_str on key.js file with a your own values.
+      
+      Replace Port,Mongo_uri and Secret_str on key.js file with a your own values.
 
 4.**Start the application:**
 
