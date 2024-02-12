@@ -67,9 +67,7 @@ To Authentication , send a POST request to api/v1/auth/login with user credentia
 
 ## Deployment
 
-Deploy the API to your production environment. The API is accessible at:
-
-[https://todobackend-production-cf9d.up.railway.app/api/v1/todo](https://todobackend-production-cf9d.up.railway.app/api/v1/todo)
+Deploy the API to your production environment.
 
 Make sure to update the authentication mechanism and other configurations for the production environment.
 
